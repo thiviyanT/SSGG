@@ -33,24 +33,27 @@ def is_shape_overlapping(existing_shapes, new_shape, min_distance):
     return False
 
 
+def direction_angle(x1, y1, x2, y2):
+    """ Return the angle between two points. """
+    angle = math.degrees(math.atan2(y2 - y1, x2 - x1)) % 360
+    return angle
+
+
+def direction_name(angle):
+    """ Return the name of the direction given an angle. """
+    directions = ["right", "bottom-right", "bottom", "bottom-left", "left", "top-left", "top", "top-right"]
+    index = round(angle / 45) % 8
+    return directions[index]
+
+
 def generate_knowledge_graph(shapes_info: list) -> str:
     """ Generate a knowledge graph in the form of a string. """
-    def direction_angle(x1, y1, x2, y2):
-        angle = math.degrees(math.atan2(y2 - y1, x2 - x1)) % 360
-        return angle
-
-    def direction_name(angle):
-        directions = ["right", "bottom-right", "bottom", "bottom-left", "left", "top-left", "top", "top-right"]
-        index = round(angle / 45) % 8
-        return directions[index]
 
     graph = []
     for i, shape_info in enumerate(shapes_info):
         graph.append(f"Element_{i + 1} has_shape {shape_info.shape}.")
         graph.append(f"Element_{i + 1} has_colour {shape_info.color}.")
         graph.append(f"Element_{i + 1} has_position ({shape_info.x}, {shape_info.y}).")
-        if shape_info.angle is not None:
-            graph.append(f"Element_{i + 1} has_rotation {shape_info.angle} degrees.")
 
         for j, other_shape_info in enumerate(shapes_info):
             if i != j:
@@ -117,27 +120,26 @@ def generate_shapes_image(num_elements: int, width: int, height: int) -> (Image.
     return img, shapes_info
 
 
-def save_images(num_images: int, num_elements: int, width: int, height: int, seed: int):
+def save_images(total_images: int, num_elements: int, width: int, height: int, seed: int, split_ratios: tuple):
     """ Save images and knowledge graphs in a zip file."""
     random.seed(seed)
+    zip_filename = f"SSGG{num_elements}_{total_images}_({width}x{height})_seed{seed}.zip"
 
-    zip_file_name = f"SSGG_{num_elements}_{num_images}_({width}x{height})_seed{seed}.zip"
+    with zipfile.ZipFile(zip_filename, "w") as zipped_shapes:
+        train_size, valid_size, _ = [int(ratio * total_images) for ratio in split_ratios]
 
-    with zipfile.ZipFile(zip_file_name, "w") as zf:
-        for i in tqdm(range(num_images), desc="Generating images"):
-            img, shapes_info = generate_shapes_image(num_elements, width, height)
-            img_name = f"image_{i + 1}.jpg"
+        for split, size in zip(["train", "valid", "test"],
+                               [train_size, valid_size, total_images - train_size - valid_size]):
+            for i in tqdm(range(size), desc="Generating images"):
+                img, shapes_info = generate_shapes_image(num_elements, width, height)
+                image_filename = f"{split}/image_{i}.jpg"
+                knowledge_graph_filename = f"{split}/knowledge_graph_{i}.txt"
 
-            with io.BytesIO() as img_buffer:
-                img.save(img_buffer, "JPEG")
-                img_buffer.seek(0)
-                zf.writestr(img_name, img_buffer.read())
-
-            kg_name = f"knowledge_graph_{i + 1}.txt"
-            kg_content = generate_knowledge_graph(shapes_info)
-
-            with io.BytesIO(kg_content.encode()) as kg_buffer:
-                zf.writestr(kg_name, kg_buffer.read())
+                with zipped_shapes.open(image_filename, "w") as image_file:
+                    img.save(image_file, "JPEG")
+                with zipped_shapes.open(knowledge_graph_filename, "w") as kg_file:
+                    kg = generate_knowledge_graph(shapes_info)
+                    kg_file.write(kg.encode())
 
 
 if __name__ == "__main__":
@@ -148,5 +150,6 @@ if __name__ == "__main__":
     parser.add_argument("--width", type=int, default=500, help="Width of the generated images (default: 500).")
     parser.add_argument("--height", type=int, default=500, help="Height of the generated images (default: 500).")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility (default: 42).")
+    parser.add_argument("--split_ratios", type=float, nargs=3, default=(0.7, 0.2, 0.1), help="Split ratios for train, valid, and test sets, respectively (default: 0.7,0.2,0.1).")
     args = parser.parse_args()
-    save_images(args.num_images, args.num_elements, args.width, args.height, args.seed)
+    save_images(args.num_images, args.num_elements, args.width, args.height, args.seed, args.split_ratios)
