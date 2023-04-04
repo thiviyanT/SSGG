@@ -51,38 +51,38 @@ The zip file is named concisely to include the random seed, number of elements, 
 Element_1 has_shape octagon.
 Element_1 has_colour #C93F4A.
 Element_1 has_position (303, 107).
-Element_1 is_positioned top-left Element_2.
-Element_1 is_positioned bottom-left Element_3.
-Element_1 is_positioned left Element_4.
-Element_1 is_positioned bottom Element_5.
+Element_1 is_positioned_top-left_of Element_2.
+Element_1 is_positioned_bottom-left_of Element_3.
+Element_1 is_positioned_left_of Element_4.
+Element_1 is_positioned_bottom_of Element_5.
 Element_2 has_shape octagon.
 Element_2 has_colour #BF3951.
 Element_2 has_position (181, 10).
-Element_2 is_positioned bottom-right Element_1.
-Element_2 is_positioned bottom-left Element_3.
-Element_2 is_positioned bottom-left Element_4.
-Element_2 is_positioned bottom-right Element_5.
+Element_2 is_positioned_bottom-right_of Element_1.
+Element_2 is_positioned_bottom-left_of Element_3.
+Element_2 is_positioned_bottom-left_of Element_4.
+Element_2 is_positioned_bottom-right_of Element_5.
 Element_3 has_shape pentagon.
 Element_3 has_colour #62146E.
 Element_3 has_position (29, 279).
-Element_3 is_positioned top-right Element_1.
-Element_3 is_positioned top-right Element_2.
-Element_3 is_positioned top-right Element_4.
-Element_3 is_positioned right Element_5.
+Element_3 is_positioned_top-right_of Element_1.
+Element_3 is_positioned_top-right_of Element_2.
+Element_3 is_positioned_top-right_of Element_4.
+Element_3 is_positioned_right_of Element_5.
 Element_4 has_shape decagon.
 Element_4 has_colour #8E2468.
 Element_4 has_position (109, 137).
-Element_4 is_positioned right Element_1.
-Element_4 is_positioned top-right Element_2.
-Element_4 is_positioned bottom-left Element_3.
-Element_4 is_positioned right Element_5.
+Element_4 is_positioned_right_of Element_1.
+Element_4 is_positioned_top-right_of Element_2.
+Element_4 is_positioned_bottom-left_of Element_3.
+Element_4 is_positioned_right_of Element_5.
 Element_5 has_shape decagon.
 Element_5 has_colour #F57E14.
 Element_5 has_position (325, 180).
-Element_5 is_positioned top Element_1.
-Element_5 is_positioned top-left Element_2.
-Element_5 is_positioned left Element_3.
-Element_5 is_positioned left Element_4.
+Element_5 is_positioned_top_of Element_1.
+Element_5 is_positioned_top-left_of Element_2.
+Element_5 is_positioned_left_of Element_3.
+Element_5 is_positioned_left_of Element_4.
     </pre></td>
   </tr>
   <tr>
@@ -91,38 +91,38 @@ Element_5 is_positioned left Element_4.
 Element_1 has_shape octagon.
 Element_1 has_colour #FABD23.
 Element_1 has_position (90, 202).
-Element_1 is_positioned right Element_2.
-Element_1 is_positioned top Element_3.
-Element_1 is_positioned right Element_4.
-Element_1 is_positioned top Element_5.
+Element_1 is_positioned_right_of Element_2.
+Element_1 is_positioned_top_of Element_3.
+Element_1 is_positioned_right_of Element_4.
+Element_1 is_positioned_top_of Element_5.
 Element_2 has_shape circle.
 Element_2 has_colour #F7FB99.
 Element_2 has_position (241, 219).
-Element_2 is_positioned left Element_1.
-Element_2 is_positioned top-left Element_3.
-Element_2 is_positioned top Element_4.
-Element_2 is_positioned top-left Element_5.
+Element_2 is_positioned_left_of Element_1.
+Element_2 is_positioned_top-left_of Element_3.
+Element_2 is_positioned_top_of Element_4.
+Element_2 is_positioned_top-left_of Element_5.
 Element_3 has_shape circle.
 Element_3 has_colour #801F6B.
 Element_3 has_position (31, 53).
-Element_3 is_positioned bottom Element_1.
-Element_3 is_positioned bottom-right Element_2.
-Element_3 is_positioned right Element_4.
-Element_3 is_positioned right Element_5.
+Element_3 is_positioned_bottom_of Element_1.
+Element_3 is_positioned_bottom-right_of Element_2.
+Element_3 is_positioned_right_of Element_4.
+Element_3 is_positioned_right_of Element_5.
 Element_4 has_shape pentagon.
 Element_4 has_colour #C13A50.
 Element_4 has_position (273, 133).
-Element_4 is_positioned left Element_1.
-Element_4 is_positioned bottom Element_2.
-Element_4 is_positioned left Element_3.
-Element_4 is_positioned top-left Element_5.
+Element_4 is_positioned_left_of Element_1.
+Element_4 is_positioned_bottom_of Element_2.
+Element_4 is_positioned_left_of Element_3.
+Element_4 is_positioned_top-left_of Element_5.
 Element_5 has_shape decagon.
 Element_5 has_colour #FABB21.
 Element_5 has_position (104, 31).
-Element_5 is_positioned bottom Element_1.
-Element_5 is_positioned bottom-right Element_2.
-Element_5 is_positioned left Element_3.
-Element_5 is_positioned bottom-right Element_4.
+Element_5 is_positioned_bottom_of Element_1.
+Element_5 is_positioned_bottom-right_of Element_2.
+Element_5 is_positioned_left_of Element_3.
+Element_5 is_positioned_bottom-right_of Element_4.
     </pre></td>
   </tr>
   <tr>
@@ -131,38 +131,38 @@ Element_5 is_positioned bottom-right Element_4.
 Element_1 has_shape hexagon.
 Element_1 has_colour #0F092D.
 Element_1 has_position (131, 238).
-Element_1 is_positioned bottom-right Element_2.
-Element_1 is_positioned top-left Element_3.
-Element_1 is_positioned right Element_4.
-Element_1 is_positioned top-right Element_5.
+Element_1 is_positioned_bottom-right_of Element_2.
+Element_1 is_positioned_top-left_of Element_3.
+Element_1 is_positioned_right_of Element_4.
+Element_1 is_positioned_top-right_of Element_5.
 Element_2 has_shape decagon.
 Element_2 has_colour #D94D3D.
 Element_2 has_position (281, 325).
-Element_2 is_positioned top-left Element_1.
-Element_2 is_positioned top-left Element_3.
-Element_2 is_positioned top Element_4.
-Element_2 is_positioned top Element_5.
+Element_2 is_positioned_top-left_of Element_1.
+Element_2 is_positioned_top-left_of Element_3.
+Element_2 is_positioned_top_of Element_4.
+Element_2 is_positioned_top_of Element_5.
 Element_3 has_shape octagon.
 Element_3 has_colour #290B54.
 Element_3 has_position (6, 75).
-Element_3 is_positioned bottom-right Element_1.
-Element_3 is_positioned bottom-right Element_2.
-Element_3 is_positioned bottom-right Element_4.
-Element_3 is_positioned right Element_5.
+Element_3 is_positioned_bottom-right_of Element_1.
+Element_3 is_positioned_bottom-right_of Element_2.
+Element_3 is_positioned_bottom-right_of Element_4.
+Element_3 is_positioned_right_of Element_5.
 Element_4 has_shape decagon.
 Element_4 has_colour #C23B4F.
 Element_4 has_position (271, 187).
-Element_4 is_positioned left Element_1.
-Element_4 is_positioned bottom Element_2.
-Element_4 is_positioned top-left Element_3.
-Element_4 is_positioned top Element_5.
+Element_4 is_positioned_left_of Element_1.
+Element_4 is_positioned_bottom_of Element_2.
+Element_4 is_positioned_top-left_of Element_3.
+Element_4 is_positioned_top_of Element_5.
 Element_5 has_shape triangle.
 Element_5 has_colour #F6FA95.
 Element_5 has_position (226, 47).
-Element_5 is_positioned bottom-left Element_1.
-Element_5 is_positioned bottom Element_2.
-Element_5 is_positioned left Element_3.
-Element_5 is_positioned bottom Element_4.
+Element_5 is_positioned_bottom-left_of Element_1.
+Element_5 is_positioned_bottom_of Element_2.
+Element_5 is_positioned_left_of Element_3.
+Element_5 is_positioned_bottom_of Element_4.
     </pre></td>
   </tr>
 </table>
