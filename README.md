@@ -5,7 +5,6 @@
     Simple Scene Graph Generator (SSGG)
 </h1>
 
-
 This Python script generates images containing simple shapes with unique colors. The script allows you to specify the number of images and the number of elements (shapes) in each image.
 
 ## TODO
