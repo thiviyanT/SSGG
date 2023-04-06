@@ -11,7 +11,7 @@ This Python script generates images containing simple shapes with unique colors.
 
 - [ ] Modify script so that each shape only apears once in each image.
 - [ ] Gurantee that the splits are not overlapping.
-- [ ] Variable number of elements per image.
+- [ ] Variable number of elements per image. (Currently this is fixed.). 
 - [ ] Create different variations of this dataset.
 
 ## Task
