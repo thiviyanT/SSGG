@@ -82,7 +82,7 @@ The generate_shapes.py script generates three splits of the dataset: train, vali
     <th>Knowledge Graph</th>
   </tr>
   <tr>
-    <td><img src="examples/image_1.jpg" alt="Example Image 1"></td>
+    <td><img src="images/example_image1.jpg" alt="Example Image 1"></td>
     <td><pre>
 Element_1 has_shape octagon.
 Element_1 has_colour #C93F4A.
@@ -122,7 +122,7 @@ Element_5 is_positioned_left_of Element_4.
     </pre></td>
   </tr>
   <tr>
-    <td><img src="examples/image_2.jpg" alt="Example Image 2"></td>
+    <td><img src="images/example_image2.jpg" alt="Example Image 2"></td>
     <td><pre>
 Element_1 has_shape octagon.
 Element_1 has_colour #FABD23.
@@ -162,7 +162,7 @@ Element_5 is_positioned_bottom-right_of Element_4.
     </pre></td>
   </tr>
   <tr>
-    <td><img src="examples/image_3.jpg" alt="Example Image 3"></td>
+    <td><img src="images/example_image3.jpg" alt="Example Image 3"></td>
     <td><pre>
 Element_1 has_shape hexagon.
 Element_1 has_colour #0F092D.
