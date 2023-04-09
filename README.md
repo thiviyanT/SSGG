@@ -234,6 +234,18 @@ Element_5 is_positioned_bottom_of Element_4.
 
 It would be simple to animate these 2D shapes. It would be make it a good testbed for developing casual reasoning models.
 
+<p  align="center">
+    <img src="images/animation.gif" width="300px;">
+<p>
+
+<p  align="center">
+    <img src="images/gravity_animation.gif" width="300px;">
+<p>
+
+<p  align="center">
+    <img src="images/spring_animation.gif" width="300px;">
+<p>
+
 ### 3D Shapes Generation
 
 It is very straightforward to generate 3D shapes using the same approach. The only difference is that we need to
