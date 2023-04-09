@@ -211,6 +211,10 @@ Element_5 is_positioned_bottom_of Element_4.
 
 ### 3D Shapes Generation
 
+It is very straightforward to generate 3D shapes using the same approach. 
+The only difference is that we need to generate 3D coordinates instead of 2D coordinates. 
+Here is a test:
+
 <p  align="center">
     <img src="images/3d_objects.jpg" width="250px;" style="max-width: 100%;  margin-right:10px;">
 <p>
