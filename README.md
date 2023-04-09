@@ -1,9 +1,8 @@
 <p  align="center">
-    <img src="images/ssgg-logo.png" alt="Alt text describing the logo" width="150px;" style="max-width: 100%;  margin-right:10px;">
+    <img src="images/ssgg-logo.png" alt="Alt text describing the logo" width="250px;" style="max-width: 100%;  margin-right:10px;">
 <p>
-<h1 align="center" dir="auto" style="font-size:60px;">
-    Simple Scene Graph Generator (SSGG)
-</h1>
+
+---
 
 This Python script generates images containing simple shapes with unique colors. The script allows you to specify the number of images and the number of elements (shapes) in each image.
 
