@@ -1,5 +1,5 @@
 <p  align="center">
-    <img src="images/ssgg-logo.png" alt="Alt text describing the logo" width="300px;" style="max-width: 100%;  margin-right:10px;">
+    <img src="images/ssgg-logo.png" alt="Alt text describing the logo" width="250px;" style="max-width: 100%;  margin-right:10px;">
 <p>
 
 ---
