@@ -4,28 +4,27 @@
 
 ---
 
-SSGG generates images containing simple shapes with unique colors. The library allows you to specify various features 
+SSGG generates images containing simple shapes with unique colours. The library allows you to specify various features 
 of the images, including but not limited to the number of images and the number of elements (shapes) in each image. 
-This dataset would be investigate the spatial reasoning capabilities of machine learning models. Researchers can 
-evaluate the model's ability to understand, learn, and predict spatial relationships between objects, which is a 
-crucial aspect of many real-world applications, such as robotics, autonomous vehicles, and scene understanding.
+This dataset would investigate the spatial reasoning capabilities of machine learning models. Researchers can 
+evaluate the model's ability to understand, learn, and predict spatial relationships between objects, which is a crucial aspect of many real-world applications, such as robotics, autonomous vehicles, and scene understanding.
 
 ## TODO
 
 - [x] Make this into a class and installable.
 - [ ] Add extra functions to the class: check for overlaps, split into train/valid/test, zip images and scene graphs.
-- [ ] Modify script so that each shape only appears once in each image.
+- [ ] Modify the script so that each shape only appears once in each image.
 - [ ] Guarantee that the splits are not overlapping.
-- [ ] Variable number of elements per image. (Currently this is fixed.).
+- [ ] Variable number of elements per image. (Currently, this is fixed.).
 
 - [ ] Create different variations of this dataset (easy/intermediate/difficult)
 
-* Ask Paul: Do we want to register this with Zenodo. If so, add DOI badge here.
+* Ask Paul: Do we want to register this with Zenodo? If so, add the DOI badge here.
 * Ask Paul: How to generate dataset metadata? Is it needed?
-* Ask Paul: When to register dataset? Before or after publication?
+* Ask Paul: When to register the dataset? Before or after publication?
 * Ask Paul: Where to put the dataset so that it lasts? (Zenodo, GitHub, etc.)
-* Ask Peter/Paul: Do we want to make it available on PyPI? If so, add badge here.
-* Make GitHub repo anonymous before submission
+* Ask Peter/Paul: Do we want to make it available on PyPI? If so, add a badge here.
+* Make the GitHub repo anonymous before submission
 
 ## Installation
 
@@ -88,10 +87,10 @@ the knowledge graph.
 ## Output
 
 The output of the `generate_shapes.py` script is a zipped folder containing the generated images and corresponding scene
-graphs. Each image contains the specified number of unique colored shapes, and the knowledge graph describes the shapes,
-their positions, and colors.
+graphs. Each image contains a specified number of unique coloured shapes, and the knowledge graph describes the shapes,
+their positions, and colours.
 
-The zip file is named concisely to include the random seed, number of elements, and the height and width of the images,
+The zip file is named concisely to include the random seed, the number of elements, and the height and width of the images,
 e.g., `SSGG5_10000_(500x500)_seed42.zip`.
 
 ### Data Split
@@ -232,7 +231,7 @@ Element_5 is_positioned_bottom_of Element_4.
 
 ### Video clips
 
-It would be simple to animate these 2D shapes. It would be make it a good testbed for developing casual reasoning models.
+It would be simple to animate these 2D shapes. It would make it a good testbed for developing casual reasoning models.
 
 <p  align="center">
     <img src="images/animation.gif" width="50px; border: black solid 2px;">
@@ -253,10 +252,5 @@ This would enable testing more challenging spatial reasoning problems.
 
 ### Inductive Setting
 
-It would be very useful doing the data split such that it allows for inductive setting.
+It would be very useful to do the data split such that it allows for an inductive setting.
 
-## License
-
-MIT License
-
-Copyright (c) 2023 Thiviyan Thanapalasingam
